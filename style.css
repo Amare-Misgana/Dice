@@ -1,0 +1,336 @@
+/* General styling */
+body {
+    background-color: rgb(102, 102, 102);
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 50px auto 1fr auto;
+    gap: 30px;
+    place-items: center;
+    width: 80%;
+}
+
+.playerOne, .playerTwo {
+    font-family: 'Bangers', cursive;
+    color: aliceblue;
+    text-align: center;
+    grid-row: 2;
+}
+
+.firstScore, .secondScore {
+    font-size: 3rem;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    grid-row: 3;
+}
+
+.first-dice-container, .second-dice-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: 4;
+}
+
+.first-dice, .second-dice {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(185, 13, 13);
+    border-radius: 25px;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+.dot {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    visibility: hidden;
+}
+
+.dice-1 .dot {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dice-2 .dot1 {
+    top: 20%;
+    left: 20%;
+}
+
+.dice-2 .dot2 {
+    bottom: 20%;
+    right: 20%;
+}
+
+.dice-3 .dot1 {
+    top: 20%;
+    left: 20%;
+}
+
+.dice-3 .dot2 {
+    bottom: 20%;
+    right: 20%;
+}
+
+.dice-3 .dot3 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dice-4 .dot1 {
+    top: 20%;
+    left: 20%;
+}
+
+.dice-4 .dot2 {
+    top: 20%;
+    right: 20%;
+}
+
+.dice-4 .dot3 {
+    bottom: 20%;
+    left: 20%;
+}
+
+.dice-4 .dot4 {
+    bottom: 20%;
+    right: 20%;
+}
+
+.dice-5 .dot1, .dice-5 .dot4 {
+    top: 20%;
+    left: 20%;
+}
+
+.dice-5 .dot2, .dice-5 .dot3 {
+    bottom: 20%;
+    right: 20%;
+}
+
+.dice-5 .dot5 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dice-6 .dot1, .dice-6 .dot4 {
+    top: 20%;
+    left: 20%;
+}
+
+.dice-6 .dot2, .dice-6 .dot3 {
+    bottom: 20%;
+    right: 20%;
+}
+
+.dice-6 .dot5, .dice-6 .dot6 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dice-1 .dot {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dice-2 .dot1 {
+    top: 20%;
+    left: 20%;
+}
+
+.dice-2 .dot2 {
+    bottom: 20%;
+    right: 20%;
+}
+
+.dice-3 .dot1 {
+    top: 20%;
+    left: 20%;
+}
+
+.dice-3 .dot2 {
+    bottom: 20%;
+    right: 20%;
+}
+
+.dice-3 .dot3 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dice-4 .dot1 {
+    top: 20%;
+    left: 20%;
+}
+
+.dice-4 .dot2 {
+    top: 20%;
+    right: 20%;
+}
+
+.dice-4 .dot3 {
+    bottom: 20%;
+    left: 20%;
+}
+
+.dice-4 .dot4 {
+    bottom: 20%;
+    right: 20%;
+}
+
+.dice-5 .dot1 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dice-5 .dot2 {
+    top: 20%;
+    right: 20%;
+}
+
+.dice-5 .dot3 {
+    bottom: 20%;
+    left: 20%;
+}
+
+.dice-5 .dot4 {
+    bottom: 20%;
+    right: 20%;
+}
+
+.dice-5 .dot5 {
+    top: 71.59%;
+    left: 71.9%;
+}
+
+.dice-6 .dot1 {
+    top: 15%;
+    left: 10%;
+}
+
+.dice-6 .dot2 {
+    top: 44%;
+    left: 10%;
+}
+
+.dice-6 .dot3 {
+    top: 80%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+
+.dice-6 .dot4 {
+    top: 22.3%;
+    left: 72%;
+    transform: translateY(-50%);
+}
+
+.dice-6 .dot5 {
+    top: 51%;
+    left: 81%;
+}
+
+.dice-6 .dot6 {
+    top: 80%;
+    left: 81%;
+}
+
+button {
+    grid-column: 1 / span 2;
+    background-color: rgb(223, 4, 4);
+    color: white;
+    border-radius: 25px;
+    border: none;
+    padding: 1px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(200, 0, 0);
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    background-color: #ff4a4a;
+}
+
+.review {
+    grid-column: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.review>img {
+    width: 100px;
+}
+
+.review>h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 50px;
+    color: white;
+    margin: 10px 0;
+}
+
+@media (max-width: 480px) {
+    body {
+        display: block;
+        height: auto;
+    }
+
+    .dot {
+        width: 25px;
+        height: 25px;
+    }
+
+    .main-body {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+        width: 95%;
+        gap: 15px;
+    }
+
+    .review h1 {
+        font-size: 30px;
+    }
+
+    .firstScore, .secondScore {
+        font-size: 2rem;
+    }
+
+    .first-dice, .second-dice {
+        width: 150px;
+        height: 150px;
+    }
+
+    button {
+        padding: 1px 20px;
+        font-size: 16px;
+        margin-top: 50px;
+    }
+}
